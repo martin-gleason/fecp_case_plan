@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+@use "typography" as t;
+@use "colors" as c;
+
+body {
+    background-color: c.get-color("white");
+  }
+  body p {
+    color: c.get-color("teal")
+  }
+  
+  .circle {
+    position: relative;
+    background: c.get-color("blue-grey");
+    border:  5px c.get-color("teal");
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    align-items: center;
+  }
