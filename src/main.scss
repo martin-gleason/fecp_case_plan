@@ -3,12 +3,23 @@
 @use "typography" as t;
 @use "colors" as c;
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     background-color: c.get-color("white");
   }
   body p {
     color: c.get-color("teal")
   }
+
+
+h2 {
+    font-family: "Big Shoulders";
+    font-weight: t.weight("bold");
+    padding: 10px 5px 15px 5px;
+    align-items: center;
+}
   
   .circle {
     position: relative;
@@ -17,6 +28,18 @@ body {
     border-radius: 100%;
     width: 200px;
     height: 200px;
-    margin: auto;
+    margin: 5px;
+    padding: 3px;
+    align-items: center;
+  }
+
+  .circle-green {
+    position: relative;
+    background: c.get-color("green");
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 3px;
     align-items: center;
   }
